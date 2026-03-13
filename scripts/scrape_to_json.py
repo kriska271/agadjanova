@@ -27,8 +27,8 @@ from html.parser import HTMLParser
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
-CHANNEL         = os.getenv("TELEGRAM_CHANNEL", "loaderfromSVO")
-COMMENTS_GROUP  = os.getenv("TELEGRAM_COMMENTS_GROUP", "loaderfromSVOchat")
+CHANNEL         = os.getenv("TELEGRAM_CHANNEL", "")
+COMMENTS_GROUP  = os.getenv("TELEGRAM_COMMENTS_GROUP", "")
 LIMIT           = int(os.getenv("MESSAGES_LIMIT", "100"))
 COMMENTS_LIMIT  = int(os.getenv("COMMENTS_LIMIT", "300"))  # only fetch comments for N most recent posts
 
