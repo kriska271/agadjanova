@@ -3,8 +3,8 @@ Scraper: parses the public Telegram channel page t.me/s/{channel}
 No API keys, no session, no authentication needed — works for any public channel.
 
 Environment variables (optional GitHub Secrets):
-  TELEGRAM_CHANNEL         – channel username without @ (default: loaderfromSVO)
-  TELEGRAM_COMMENTS_GROUP  – linked discussion group username (default: loaderfromSVOchat)
+  TELEGRAM_CHANNEL         – channel username without @ (default: '')
+  TELEGRAM_COMMENTS_GROUP  – linked discussion group username (default: '')
   MESSAGES_LIMIT           – how many latest messages to keep (default: 100)
   TELEGRAM_API_ID          – Telegram API id (for comments via Telethon)
   TELEGRAM_API_HASH        – Telegram API hash (for comments via Telethon)
