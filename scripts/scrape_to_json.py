@@ -3,8 +3,8 @@ Scraper: parses the public Telegram channel page t.me/s/{channel}
 No API keys, no session, no authentication needed — works for any public channel.
 
 Environment variables (optional GitHub Secrets):
-  TELEGRAM_CHANNEL         – channel username without @ (default: agadjanova_kristina)
-  TELEGRAM_COMMENTS_GROUP  – linked discussion group username (default: chat_agadjanovaka)
+  TELEGRAM_CHANNEL         – channel username without @ (default: loaderfromSVO)
+  TELEGRAM_COMMENTS_GROUP  – linked discussion group username (default: loaderfromSVOchat)
   MESSAGES_LIMIT           – how many latest messages to keep (default: 100)
   TELEGRAM_API_ID          – Telegram API id (for comments via Telethon)
   TELEGRAM_API_HASH        – Telegram API hash (for comments via Telethon)
@@ -27,8 +27,8 @@ from html.parser import HTMLParser
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
-CHANNEL         = os.getenv("TELEGRAM_CHANNEL", "agadjanova_kristina")
-COMMENTS_GROUP  = os.getenv("TELEGRAM_COMMENTS_GROUP", "chat_agadjanovaka")
+CHANNEL         = os.getenv("TELEGRAM_CHANNEL", "loaderfromSVO")
+COMMENTS_GROUP  = os.getenv("TELEGRAM_COMMENTS_GROUP", "loaderfromSVOchat")
 LIMIT           = int(os.getenv("MESSAGES_LIMIT", "100"))
 COMMENTS_LIMIT  = int(os.getenv("COMMENTS_LIMIT", "300"))  # only fetch comments for N most recent posts
 
